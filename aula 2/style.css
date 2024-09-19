@@ -1,0 +1,21 @@
+body {
+  /* background-color: blueviolet; */
+  padding: 0 50px;
+}
+
+h1 {
+  color: #333;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  color: red;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+img {
+  border-radius: 28px;
+  width: 600px;
+}
