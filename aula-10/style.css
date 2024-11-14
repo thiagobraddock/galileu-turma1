@@ -1,0 +1,86 @@
+/* @import url("./header.css"); */
+
+body {
+  /* background-color: blueviolet; */
+  padding: 0 20px;
+  background-color: #222;
+  color: white;
+}
+
+.card_ponto_turistico {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.card_imagem {
+  font-size: 0;
+  flex: 1; /* Imagem ocupa 1 parte */
+  min-width: 150px; /* Impede que a imagem encolha muito */
+  max-width: 300px; /* Garantir que a imagem não ultrapasse 300px */
+}
+
+.card_detalhes {
+  flex: 1;
+  min-width: 200px; /* Evita que o texto encolha muito */
+}
+
+.card_imagem img {
+  width: 100%;
+  height: 200px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Corta a imagem para ajustar ao contêiner */
+  object-position: center; /* Centraliza a imagem no corte */
+}
+
+.categorias {
+  display: flex;
+  gap: 8px;
+}
+
+.categorias span {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 768px) {
+  .card_ponto_turistico {
+    flex-direction: column; /* Empilha a imagem e o texto em telas menores */
+  }
+
+  .card_imagem {
+    width: 100%; /* A imagem ocupa a largura total do contêiner */
+    max-width: 100%; /* Garante que a imagem fique com a mesma largura que o contêiner */
+  }
+}
+
+/* 
+ class - chama com .
+ id    - chama com # 
+*/
+#elemento-pai {
+  padding: 12px;
+}
+
+/* HEADER */
+.categoria-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+#header {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+}
+
+.active {
+  background-color: #d9e437;
+  font-weight: bold;
+}

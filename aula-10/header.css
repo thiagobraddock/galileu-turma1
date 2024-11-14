@@ -1,0 +1,50 @@
+/* Estilo para o header */
+#header-categorias {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  background-color: #f3f4f6; /* Cinza claro */
+  border-radius: 8px;
+  justify-content: center; /* Centraliza os botões */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para os botões de categoria */
+.categoria-btn {
+  background-color: #e5e7eb; /* Cinza suave */
+  color: #1f2937; /* Cinza escuro para o texto */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para hover nos botões */
+.categoria-btn:hover {
+  background-color: #d1d5db; /* Cinza mais escuro no hover */
+  color: #111827; /* Cinza mais forte para o texto no hover */
+}
+
+/* Estilo do botão ativo */
+.categoria-btn.active {
+  background-color: #3b82f6; /* Azul claro, semelhante ao botão "All" */
+  color: white; /* Texto branco para contraste */
+}
+
+/* Adaptação responsiva */
+@media (max-width: 768px) {
+  #header-categorias {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .categoria-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
