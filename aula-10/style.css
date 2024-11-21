@@ -57,12 +57,12 @@ body {
     width: 100%; /* A imagem ocupa a largura total do contêiner */
     max-width: 100%; /* Garante que a imagem fique com a mesma largura que o contêiner */
   }
+
+  #header {
+    flex-wrap: wrap;
+  }
 }
 
-/* 
- class - chama com .
- id    - chama com # 
-*/
 #elemento-pai {
   padding: 12px;
 }
